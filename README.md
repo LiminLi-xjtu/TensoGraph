@@ -21,28 +21,11 @@ tensorflow 2.4.1
 To reproduce the entire code, please use: python TensoGraph\drug_tucker+gtn.py
 Please pay attention to modifying and saving the paths of the parameters and the dataset in this section.
 
+For the visualized code of the ONEIL dataset: (Note to change the paths for different scores, for example, in the ONEIL dataset, the relevant sections such as #oneil loewe or #oneil bliss or #oneil hsa or #oneil zip should be commented out) 
 
-To reproduce the relevant ablation experiments, please use:
-1. python TensoGraph\drug_tucke_gtn-A.py    
+For the PCC and RMSE values of the oneil dataset in all cell lines, please use TensoGraph\all_PCC.py and TensoGraph\all_RMSE.py respectively. 
 
-This code is used to remove the molecular structural features of the drug.
-
-2. python TensoGraph\drug_tucke_gtn-A-tucker.py
-
-This code is used to remove the molecular structure features of the drug and obtain the features obtained through the Tucker decomposition part.
-
-3. python TensoGraph\drug_tucke_gtn-A-gtn.py
-
-This code is used to remove the molecular structure features of the drug and the features of the GTN part, thereby obtaining the final characteristics.
-
-
-4. python TensoGraph\drug_tucker_gtn-B.py
-This code is used to remove the features obtained from the Tucker decomposition and the GTN part.This code is used to remove the features obtained from the Tucker decomposition and the GTN part.
-
-
-For the visualized code: (Note to change the paths for different scores, for example, in the ONEIL dataset, the relevant sections such as #oneil loewe or #oneil bliss or #oneil hsa or #oneil zip should be commented out) 
-For the PCC and RMSE values of the oneil dataset in all cell lines, please use TensoGraph\all_PCC_hezitu.py and TensoGraph\all_RMSE_hezitu.py respectively. 
-For the PCC and RMSE values of the oneil dataset in each cell line, please use TensoGraph\every_PCC_zhexiantu.py and TensoGraph\every_RMSE_zhexiantu.py respectively.
+For the PCC and RMSE values of the oneil dataset in each cell line, please use TensoGraph\every_PCC.py and TensoGraph\every_RMSE.py respectively.
 
 
 
