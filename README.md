@@ -18,34 +18,31 @@ tensorflow 2.4.1
 
 
 ## Training
-To reproduce the entire code, please use: python codes\drug_tucker+gtn.py
+To reproduce the entire code, please use: python TensoGraph\drug_tucker+gtn.py
 Please pay attention to modifying and saving the paths of the parameters and the dataset in this section.
 
 
 To reproduce the relevant ablation experiments, please use:
-1. python codes\drug_tucke_gtn-A.py    
+1. python TensoGraph\drug_tucke_gtn-A.py    
 
 This code is used to remove the molecular structural features of the drug.
 
-2. python codes\drug_tucke_gtn-A-tucker.py
+2. python TensoGraph\drug_tucke_gtn-A-tucker.py
 
 This code is used to remove the molecular structure features of the drug and obtain the features obtained through the Tucker decomposition part.
 
-3. python codes\drug_tucke_gtn-A-gtn.py
+3. python TensoGraph\drug_tucke_gtn-A-gtn.py
 
 This code is used to remove the molecular structure features of the drug and the features of the GTN part, thereby obtaining the final characteristics.
 
 
-4. python codes\drug_tucker_gtn-B.py
+4. python TensoGraph\drug_tucker_gtn-B.py
 This code is used to remove the features obtained from the Tucker decomposition and the GTN part.This code is used to remove the features obtained from the Tucker decomposition and the GTN part.
 
-对于可视化的代码：（注意更改不同得分上的路径，比如ONEIL数据集将#oneil loewe或者# oneil bliss或者# oneil hsa或者# oneil zip的相关部分进行注释）
 
-对于oneil数据集在所有细胞系中的PCC和RMSE请分别用codes\all_PCC_hezitu.py和codes\all_RMSE_hezitu.py
-
-对于oneil数据集在每个细胞系中的PCC和RMSE请分别用codes\every_PCC_zhexiantu.py和codes\every_RMSE_zhexiantu.py
-
-
+For the visualized code: (Note to change the paths for different scores, for example, in the ONEIL dataset, the relevant sections such as #oneil loewe or #oneil bliss or #oneil hsa or #oneil zip should be commented out) 
+For the PCC and RMSE values of the oneil dataset in all cell lines, please use TensoGraph\all_PCC_hezitu.py and TensoGraph\all_RMSE_hezitu.py respectively. 
+For the PCC and RMSE values of the oneil dataset in each cell line, please use TensoGraph\every_PCC_zhexiantu.py and TensoGraph\every_RMSE_zhexiantu.py respectively.
 
 
 
