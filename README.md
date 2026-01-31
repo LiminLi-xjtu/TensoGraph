@@ -19,6 +19,7 @@ tensorflow 2.4.1
 
 ## Training
 To reproduce the entire code, please use``` python TensoGraph\Tensograph_oneil.py ```to run oneil dataset.
+Please use``` python TensoGraph\Tensograph_cloud.py ```to run cloud dataset.
 Please pay attention to modifying and saving the paths of the parameters and the dataset in this section.
 
 For the visualized code of the ONEIL dataset: (Note to change the paths for different scores, for example, in the ONEIL dataset, the relevant sections such as #oneil loewe or #oneil bliss or #oneil hsa or #oneil zip should be commented out) 
